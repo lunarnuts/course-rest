@@ -16,3 +16,7 @@ func IDFromVars(r *http.Request) (uint, error) {
 	return uint(i), nil
 }
 
+func FirstNameFromVars(r *http.Request) string {
+	firstNameString := r.FormValue("first_name")
+	return firstNameString
+}
